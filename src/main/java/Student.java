@@ -32,6 +32,17 @@ public class Student {
     return this.grades.get(index);
   }
 
+  // updates the given grade at the index
+  public void deleteGrade(int index) {
+    this.grades.remove(index);
+  }
+  // updates the given grade at the index
+  public void updateGrade(int index,int newGrade) {
+    this.grades.remove(index);
+    this.grades.add(index,newGrade);
+
+  }
+
   // returns the list of grades
   public ArrayList<Integer> getGrades() {
     return this.grades;

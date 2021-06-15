@@ -53,5 +53,21 @@ public class StudentsTest {
 
   }
 
+  @Test
+  public void studentGradeDelete(){
+    testStudent.deleteGrade(0);
+    assertEquals(71,testStudent.getGrade(0));
+    testStudent.addGrade(70);
+    //Array is now [71,70]
+  }
+
+  @Test
+  public void studentGradeUpdate(){
+    testStudent.updateGrade(1,80);
+    assertEquals(80,testStudent.getGrade(1));
+
+  }
+
+
 
 }
