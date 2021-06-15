@@ -27,6 +27,11 @@ public class Student {
     this.grades.add(grade);
   }
 
+  // gets the given grade at the index
+  public int getGrade(int index) {
+    return this.grades.get(index);
+  }
+
   // returns the list of grades
   public ArrayList<Integer> getGrades() {
     return this.grades;
@@ -41,13 +46,4 @@ public class Student {
     }
     return sum / amount;
   }
-
-  public static void main(String[] args) {
-    Student test = new Student("Test",1);
-    test.addGrade(70);
-    test.addGrade(71);
-    System.out.println(test.getGradeAverage());
-    System.out.println(test.getGrades());
-  }
-
 }
