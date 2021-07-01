@@ -57,4 +57,5 @@ public class Student {
     }
     return sum / amount;
   }
+
 }
